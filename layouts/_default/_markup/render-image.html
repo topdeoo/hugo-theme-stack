@@ -37,5 +37,7 @@
 		class="gallery-image" 
 		data-flex-grow="{{ div (mul $image.Width 100) $image.Height }}"
 		data-flex-basis="{{ div (mul $image.Width 240) $image.Height }}px"
+	{{ else }}
+		data-action="zoom"
 	{{ end }}
 >
